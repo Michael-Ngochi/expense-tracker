@@ -1,0 +1,17 @@
+.ExpenseTable{
+text-align: center;
+width:100%;
+border-collapse: collapse;
+margin-left:2%;
+margin-right:2%;
+}
+.ExpenseTable th{
+    background:grey;
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.totalRow{
+    border-top:solid 1px ;
+    border-bottom: solid 1px ;
+}
