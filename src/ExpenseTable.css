@@ -1,10 +1,19 @@
 .ExpenseTable{
 text-align: center;
-width:100%;
+width:50%;
 border-collapse: collapse;
 margin-left:2%;
 margin-right:2%;
+box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+
 }
+.ExpenseTable tbody tr:nth-child(odd) {
+    background-color: #bcbebe;
+  }
+
+  .ExpenseTable tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
 .ExpenseTable th{
     background:grey;
     color:white;
@@ -14,4 +23,7 @@ margin-right:2%;
 .totalRow{
     border-top:solid 1px ;
     border-bottom: solid 1px ;
+}
+.ExpenseTable tbody tr{
+    font-size:16px;
 }
