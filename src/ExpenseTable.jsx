@@ -11,7 +11,7 @@ function ExpenseTable(
 
             function Removebtn({id}){
                 return(
-                    <button style={{background:"unset",border:"none"}} onClick={()=>onRemove(id)}><img width="20px" src={trash} alt="" /></button>
+                    <button style={{background:"unset",border:"none"}} onClick={()=>onRemove(id)}><i class="bi bi-trash trashBtn"></i></button>
                 )
             }
 

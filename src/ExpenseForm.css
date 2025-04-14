@@ -4,6 +4,7 @@
  /* border:solid 1px; */
  padding:2%;
  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+ height:fit-content;
 }
 .expenseForm{
     display:flex;
@@ -12,4 +13,22 @@
 .expenseForm input,select{
 padding:10px;
 margin:10px;
+border-radius:50px;
+border:solid 1px;
+}
+.addBtn{
+    display: flex;
+    font-weight: bold;
+    font-size:25px;
+    align-items: center;
+    justify-content:center;
+    background-color: rgb(0, 0, 0);
+    border:unset;
+    color:white;
+    border-radius:50px;
+}
+
+.addLogo{
+    margin-left:10px;
+    font-size:30px;
 }

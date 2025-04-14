@@ -8,7 +8,7 @@ function ExpenseForm (
     const handleSubmit = (e) => {
         e.preventDefault()
         const newExpense = {
-          id: Date.now(), // generate unique ID
+          id: Date.now(),
           name: e.target.name.value,
           description: e.target.description.value,
           category: e.target.category.value,
@@ -22,6 +22,7 @@ function ExpenseForm (
     <>
     <div className="expenseContainer">
     <h2>Enter expense details</h2>
+    <p>Enter your expense details below</p>
     <form onSubmit={handleSubmit} className="expenseForm">
     <input name="name" type="text" placeholder="Expense"></input>
     <input name="description" type="text" placeholder="Description"></input>
@@ -30,7 +31,7 @@ function ExpenseForm (
         <option value="Housing">Housing</option>
         <option value="Utilites">Utilities</option>
         <option value="Transportation">Transportation</option>
-        <option value="Food & Groceties">Food & Groceties</option>
+        <option value="Food & Groceries">Food & Groceries</option>
         <option value="Personal & Health">Personal & Health</option>
         <option value="Entertainment">Entertainment</option>
         <option value="Financial">Fianancial</option>
@@ -39,7 +40,7 @@ function ExpenseForm (
     </select>
     <input name="amount" type="text" placeholder="Amount"></input>
     <input name="date" type="date"></input>
-    <button  type="Submit">Add <img width="30px" src={addIcon} alt="" /></button>
+    <button  className="addBtn" type="Submit">Add Expense  <i class="bi bi-journal-plus addLogo"></i></button>
     </form>
     </div>
     </>

@@ -11,7 +11,7 @@ const expenses =[
       id: 2,
       name: "Grocery Run",
       description: "Weekly groceries from the supermarket",
-      category: "Food",
+      category: "Food & Groceries",
       amount: 4500,
       date: "2025-04-03"
     },

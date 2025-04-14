@@ -5,6 +5,7 @@ border-collapse: collapse;
 margin-left:2%;
 margin-right:2%;
 box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+height: max-content;
 
 }
 .ExpenseTable tbody tr:nth-child(odd) {
@@ -26,4 +27,7 @@ box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .ExpenseTable tbody tr{
     font-size:16px;
+}
+.trashBtn{
+  font-size:20px;
 }
