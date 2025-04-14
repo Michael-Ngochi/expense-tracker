@@ -5,6 +5,14 @@ import "./searchBox.css"
  function SearchBox({onSubmit}){
     const [term, setTerm] = useState("");
     const [category,setCategory]=useState("")
+    const [sortBy, setSortBy] = useState("");
+
+    const handleSortChange = (e) => {
+      const value = e.target.value;
+      setSortBy(value);
+      onSubmit({ term, category, sortBy: value });
+    };
+
     const handleChange=(e)=>{
         const value = e.target.value;
         setTerm(value);
@@ -20,14 +28,14 @@ import "./searchBox.css"
 
     const handlesearch = (e) => {
         e.preventDefault()
-        const expense =e.target.term.value
+        // const expense =e.target.term.value
         // console.log(expense)
-        onSubmit(expense)
+        onSubmit({ term, category, sortBy })
       }
 
     return(
-        <form onSubmit={handlesearch} onChange={handleChange}>
-        <input name="term" className="search" type="text" placeholder="search....." defaultValue={term}></input>
+        <form onSubmit={handlesearch}>
+        <input onChange={handleChange} name="term" className="search" type="text" placeholder="search....." defaultValue={term}></input>
 
         <select name="category" type="text" onChange={handleCategoryChange}>
         <option value="">Select a category...</option>
@@ -42,7 +50,13 @@ import "./searchBox.css"
         <option value="Miscellaneous">Miscellaneous</option>
     </select>
 
-    <button className="searchBtn" type="submit" >search  <i class="bi bi-search"></i></button>
+    <select value={sortBy} onChange={handleSortChange}>
+        <option value="">Sort By...</option>
+        <option value="category">Category</option>
+        <option value="amount">Amount</option>
+      </select>
+
+    {/* <button className="searchBtn" type="submit" >search  <i className="bi bi-search"></i></button> */}
         </form>
     )
  }

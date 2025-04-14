@@ -1,6 +1,20 @@
-.mainBody{
-
+body{
+  background-color: rgb(230, 230, 230);
 }
+
 .formTable{
     display: flex;
+    justify-content:space-evenly;
 }
+.topArea{
+display: flex;
+align-items: center;
+/* justify-content: space-evenly; */
+margin-top:0px;
+padding: 0px;
+}
+@media only screen and (max-width: 700px) {
+    .formTable {
+      flex-direction: column;
+    }
+  }

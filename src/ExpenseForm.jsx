@@ -1,5 +1,4 @@
 import React from "react";
-import addIcon from "./assets/addIcon.png"
 import "./ExpenseForm.css"
 
 function ExpenseForm (
@@ -40,7 +39,7 @@ function ExpenseForm (
     </select>
     <input name="amount" type="text" placeholder="Amount"></input>
     <input name="date" type="date"></input>
-    <button  className="addBtn" type="Submit">Add Expense  <i class="bi bi-journal-plus addLogo"></i></button>
+    <button  className="addBtn" type="Submit">Add Expense  <i className="bi bi-journal-plus addLogo"></i></button>
     </form>
     </div>
     </>

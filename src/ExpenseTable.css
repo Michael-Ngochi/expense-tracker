@@ -1,12 +1,22 @@
 .ExpenseTable{
 text-align: center;
-width:50%;
+width:1000px;
 border-collapse: collapse;
 margin-left:2%;
 margin-right:2%;
-box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+border:solid 1px rgb(182, 182, 182);;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 height: max-content;
+}
 
+.ExpenseTable tr{
+  text-align: left;
+}
+.ExpenseTable tbody tr{
+  height:40px;
+}
+.ExpenseTable .rows:hover {
+  background-color: #f9f9f9;
 }
 .ExpenseTable tbody tr:nth-child(odd) {
     background-color: #bcbebe;
@@ -15,19 +25,27 @@ height: max-content;
   .ExpenseTable tbody tr:nth-child(even) {
     background-color: #ffffff;
   }
-.ExpenseTable th{
-    background:grey;
-    color:white;
-    padding-top:10px;
-    padding-bottom:10px;
-}
+  .ExpenseTable th {
+    padding: 12px;
+    text-align: left;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #ddd;
+  }
 .totalRow{
     border-top:solid 1px ;
     border-bottom: solid 1px ;
+    text-align:right !important;
 }
 .ExpenseTable tbody tr{
     font-size:16px;
 }
-.trashBtn{
-  font-size:20px;
+
+.trashBtn {
+  color: #cc0000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.trashBtn:hover {
+  color: #e60000;
 }

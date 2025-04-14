@@ -1,6 +1,5 @@
 import React from "react";
 import "./ExpenseTable.css"
-import trash from "./assets/trash.svg"
 
 
 function ExpenseTable(
@@ -11,7 +10,7 @@ function ExpenseTable(
 
             function Removebtn({id}){
                 return(
-                    <button style={{background:"unset",border:"none"}} onClick={()=>onRemove(id)}><i class="bi bi-trash trashBtn"></i></button>
+                    <button style={{background:"unset",border:"none"}} onClick={()=>onRemove(id)}><i className="bi bi-trash trashBtn"></i></button>
                 )
             }
 
