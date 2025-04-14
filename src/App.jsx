@@ -84,9 +84,11 @@ const total = mydata.reduce((sum, exp) => sum + exp.amount, 0)
     <div className='chartContainer'>
     <PieChart
   series={[{data:chartData()},
+    
   ]}
+ 
   width={500}
-  height={200}
+  height={250}
 /> 
 </div>
 <ExpenseForm onSubmit={handleAdd}/>

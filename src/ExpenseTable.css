@@ -1,4 +1,5 @@
 .ExpenseTable{
+  font-family: 'Segoe UI', sans-serif;
 text-align: center;
 width:1000px;
 border-collapse: collapse;
@@ -19,7 +20,7 @@ height: max-content;
   background-color: #f9f9f9;
 }
 .ExpenseTable tbody tr:nth-child(odd) {
-    background-color: #bcbebe;
+    background-color: #dddfdf;
   }
 
   .ExpenseTable tbody tr:nth-child(even) {
@@ -29,12 +30,18 @@ height: max-content;
     padding: 12px;
     text-align: left;
     font-size: 0.9rem;
+    background-color: #444;
+    color: white;
     border-bottom: 1px solid #ddd;
   }
-.totalRow{
+.ExpenseTable .totalRow td{
     border-top:solid 1px ;
     border-bottom: solid 1px ;
-    text-align:right !important;
+    text-align:right;
+    padding: 14px;
+  font-weight: bold;
+  background-color: #f0f8ff;
+  border-top: 2px solid #ccc;
 }
 .ExpenseTable tbody tr{
     font-size:16px;
@@ -48,4 +55,10 @@ height: max-content;
 }
 .trashBtn:hover {
   color: #e60000;
+}
+.ExpenseTable .rows td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #444;
 }
