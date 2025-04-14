@@ -86,13 +86,6 @@ npm start
 
 ---
 
-## Screenshots
-
-> Include screenshots of:
-- The chart + form section
-- The table with rows
-- The search and sort filters in use
-
 ---
 
 ## License
