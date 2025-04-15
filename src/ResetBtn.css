@@ -1,0 +1,22 @@
+.resetBtn:hover{
+background-color: red;
+color:white;
+cursor: pointer;
+}
+
+.resetIcon{
+    font-size:15px;
+}
+
+.resetBtn :hover{
+    color:white;
+    }
+.resetBtn{
+    position:absolute;
+    font-weight: bold;
+    height:30px;
+    color:red;
+    border-radius:10px;
+    border:1px solid;
+    right:30%;
+}

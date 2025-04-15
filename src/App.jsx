@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState} from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import ResetBtn from './ResetBtn'
 import ExpenseForm from './ExpenseForm'
 import ExpenseTable from './ExpenseTable'
 import SearchBox from './searchBox'
@@ -76,6 +75,10 @@ const handleRemove = (id) => {
 
 const total = mydata.reduce((sum, exp) => sum + exp.amount, 0)
 
+const hanldeReset=()=>{
+setData([])
+setOriginalData([])
+}
 
   return(
     <div className='mainBody'>
@@ -97,7 +100,10 @@ const total = mydata.reduce((sum, exp) => sum + exp.amount, 0)
     <div className='formTable'>
     
     <div>
+    <div style={{display:"flex",alignItems:"center"}}>
     <SearchBox onSubmit={handleSearch}/>
+    <ResetBtn hanldeReset={hanldeReset}/>
+    </div>
     <ExpenseTable mydata={mydata} onRemove={handleRemove} total={total}/>
     </div>
     </div>
